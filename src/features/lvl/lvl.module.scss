@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.name {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #c2c5d4;
+}
+.wrapper__item {
+  display: flex;
+  gap: 4px;
+}
+.list_lvl {
+  max-height: 320px;
+  overflow-y: auto;
+}
+.list_lvl::-webkit-scrollbar {
+  width: 10px;
+}
+.list_lvl::-webkit-scrollbar-thumb {
+  background-color: #1b1d28;
+  border: 1px solid #6b77be;
+  border-radius: 15px;
+}
+.list_lvl::-webkit-scrollbar-track {
+  background-color: #1b1d28;
+  border: 1px solid #16171f;
+  border-radius: 15px;
+}
+.item__text__buy_sell_purp {
+  width: 60px;
+  height: 20px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b77be;
+  text-align: left;
+}
+.item__text__buy_sell_blue {
+  width: 60px;
+  height: 20px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #46c5e5;
+  text-align: left;
+}
+.item__text__value_purp {
+  width: 100px;
+  height: 20px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b77be;
+  text-align: center;
+}
+.item__text__value_blue {
+  width: 100px;
+  height: 20px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #46c5e5;
+  text-align: center;
+}
+.item__text__percent_purp {
+  width: 60px;
+  height: 20px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b77be;
+  text-align: center;
+}
+.item__text__percent_blue {
+  width: 60px;
+  height: 20px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #46c5e5;
+  text-align: center;
+}
+.item__text__buy_sell_purp,
+.item__text__buy_sell_blue,
+.item__text__value_purp,
+.item__text__value_blue,
+.item__text__percent_purp,
+.item__text__percent_blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 1100px) {
+  .list_lvl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item__text__buy_sell_purp {
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .item__text__buy_sell_blue {
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .item__text__value_purp {
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .item__text__value_blue {
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .item__text__percent_purp {
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .item__text__percent_blue {
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .list_lvl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item__text__buy_sell_purp {
+    width: 48px;
+    height: 20px;
+    font-size: 9.6px;
+  }
+  .item__text__buy_sell_blue {
+    width: 48px;
+    height: 20px;
+    font-size: 9.6px;
+  }
+  .item__text__value_purp {
+    width: 110px;
+    height: 20px;
+    font-size: 9.6px;
+  }
+  .item__text__value_blue {
+    width: 110px;
+    height: 20px;
+    font-size: 9.6px;
+  }
+  .item__text__percent_purp {
+    width: 48px;
+    height: 20px;
+    font-size: 9.6px;
+  }
+  .item__text__percent_blue {
+    width: 48px;
+    height: 20px;
+    font-size: 9.6px;
+  }
+  .list_lvl {
+    max-height: 165px;
+  }
+}

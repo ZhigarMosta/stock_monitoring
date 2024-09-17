@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+.container {
+  border: 1px solid #16171f;
+  border-radius: 15px;
+  width: 230px;
+  height: 40px;
+  background: #1b1d28;
+  padding: 7px 10px 6px 18.82px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container:hover {
+  background: #1e202b;
+}
+.input {
+  display: none;
+}
+.text {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #abafc4;
+}
+.input:checked ~ .container {
+  border: 1px solid #46c5e5;
+  .text {
+    color: #46c5e5;
+  }
+  .warnings__active {
+    stroke: #46c5e5;
+  }
+}
+.content {
+  display: flex;
+}
+.wrapper__warnings {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-left: auto;
+}
+@media (max-width: 800px) {
+  .text {
+    font-family: "Amiko", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #abafc4;
+  }
+  .container {
+    width: 190px;
+  }
+  .width__warnings {
+    width: 8px;
+    height: 8px;
+  }
+}

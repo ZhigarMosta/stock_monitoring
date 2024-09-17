@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+
+.wrapper {
+  border-radius: 10px;
+  width: 260px;
+  height: 40px;
+
+  padding-top: 7px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+  padding-left: 9px;
+
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  background: #1b1d28;
+  cursor: pointer;
+  .container {
+    display: flex;
+    gap: 6px;
+  }
+}
+.text {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #abafc4;
+}
+.arrow {
+  margin-left: auto;
+}
+.wrapper:hover {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: 0.3s ease;
+}
+.wrapper:hover + .modal {
+  .container__modal_text label .text {
+    font-size: 20px;
+    transition: 0.3s ease;
+  }
+  .container__modal_text label {
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+  }
+}
+
+.modal {
+  position: absolute;
+  border-radius: 10px;
+  height: 0;
+  width: 0px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+  background: #000;
+
+  // margin-top: 100px;
+
+  .container__modal_text label .text {
+    font-size: 0px;
+    transition: 0.3s ease;
+  }
+  .container__modal_text label {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    transition: 0.3s ease;
+  }
+}
+
+.modal:hover {
+  width: 260px;
+  .container__modal_text label {
+    display: block;
+  }
+  .container__modal_text label .text {
+    font-size: 20px;
+    transition: 0.3s ease;
+  }
+  .container__modal_text label {
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+  }
+}
+.input {
+  display: none;
+}
+
+.wrapper__instrument {
+  display: block;
+  width: 260px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 40px;
+  background-color: #16171f;
+}
+.wrapper__instrument:hover {
+  background-color: #1b1d28;
+  transition: background 0.3s ease;
+}
+.container__modal_text:last-child .wrapper__instrument {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

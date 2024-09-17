@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+
+.container {
+  width: 400px;
+}
+.cntainer__legend {
+  // display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+.name_legend {
+	width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 22px;
+  padding-left: 10px;
+}
+.text__buy {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #46c5e5;
+}
+.text__sum {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #c2c5d4;
+  margin-bottom: 11px;
+  margin-left: 10px;
+}
+.text__sell {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #6b77be;
+}
+.container__chart {
+  display: flex;
+  max-height: 640px;
+  overflow-y: auto;
+}
+
+.container__chart::-webkit-scrollbar {
+  width: 10px;
+}
+.container__chart::-webkit-scrollbar-track {
+  background-color: #1b1d28;
+  border: 1px solid #16171f;
+  border-radius: 15px;
+}
+.container__chart::-webkit-scrollbar-thumb {
+  background-color: #1b1d28;
+  border: 1px solid #6b77be;
+  border-radius: 15px;
+}
+
+.input__text {
+  max-width: 120px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #abafc4;
+}
+.input__date::-webkit-calendar-picker-indicator {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("../../image/calendar.svg");
+}
+.input__date {
+  max-width: 120px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #abafc4;
+}
+.input__date {
+  position: relative;
+  padding-right: 0px; /* Убедитесь, что есть место для изображения */
+}
+.container__input {
+  display: flex;
+  justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.wrapper__input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px 5px 18px;
+
+  border-radius: 10px;
+  width: 160px;
+  height: 40px;
+
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  background: #1b1d28;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 240px;
+  }
+	.container__chart {
+		max-height: 320px;
+	}
+}

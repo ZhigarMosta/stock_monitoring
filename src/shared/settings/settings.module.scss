@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+.wrapper {
+  border-radius: 10px;
+	width: 100%;
+  max-width: 260px;
+  height: 40px;
+
+  padding-top: 7px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+  padding-left: 9px;
+
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  background: #1b1d28;
+  cursor: pointer;
+  .container {
+    display: flex;
+    gap: 6px;
+    padding: 7, 10, 6, 9;
+  }
+}
+.text {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #abafc4;
+}
+

@@ -1,0 +1,21 @@
+.container__ticker_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100vh - 270px);
+  overflow-y: auto;
+  padding-right: 20px;
+}
+.container__ticker_list::-webkit-scrollbar {
+  width: 10px;
+}
+.container__ticker_list::-webkit-scrollbar-track {
+  background-color: #1b1d28;
+  border: 1px solid #16171f;
+  border-radius: 15px;
+}
+.container__ticker_list::-webkit-scrollbar-thumb {
+  background-color: #1b1d28;
+  border: 1px solid #6b77be;
+  border-radius: 15px;
+}
