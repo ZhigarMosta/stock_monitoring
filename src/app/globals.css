@@ -5,6 +5,20 @@
   border: none;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #1b1d28;
+  border: 1px solid #16171f;
+  border-radius: 15px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #1b1d28;
+  border: 1px solid #6b77be;
+  border-radius: 15px;
+}
+
 *,
 *::before,
 *::after {
