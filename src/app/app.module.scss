@@ -59,10 +59,11 @@
   @keyframes on {
     0% {
       background: rgba(0, 0, 0, 0);
-			display: block;
+      display: none;
     }
     100% {
       background: rgba(0, 0, 0, 0.7);
+      display: block;
     }
   }
   .shadow_off {
@@ -78,10 +79,11 @@
   @keyframes off {
     0% {
       background: rgba(0, 0, 0, 0.7);
+      display: block;
     }
     100% {
       background: rgba(0, 0, 0, 0);
-			display: none;
+      display: none;
     }
   }
 }
