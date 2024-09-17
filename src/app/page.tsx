@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ChoiceTicker from "../features/choiceTicker/choiceTicker";
 import style from "./app.module.scss";
 import Ema from "../widgets/ema/ema";
