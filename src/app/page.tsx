@@ -13,6 +13,23 @@ function App() {
   const [shadow, setShadow] = useState(false);
   const tickerData: any = useUnit($nameTicker);
 
+  // Функция для установки значения vh
+  const setVh = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  };
+
+  // useEffect для добавления обработчиков событий и установки vh
+  useEffect(() => {
+    window.addEventListener("resize", setVh);
+    setVh(); // Установка vh при монтировании
+
+    // Очистка обработчика при размонтировании
+    return () => {
+      window.removeEventListener("resize", setVh);
+    };
+  }, []);
+  
   return (
     <div className={style.app}>
       <ChoiceTicker shadow={() => setShadow(!shadow)} />
