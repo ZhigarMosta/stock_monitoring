@@ -13,13 +13,16 @@ function App() {
   const [shadow, setShadow] = useState(false);
   const tickerData: any = useUnit($nameTicker);
 
-  shadow
-    ? document.body.classList.add(style.body__scroll)
-    : document.body.classList.remove(style.body__scroll);
+  const ChooseTickerIsPnen = () => {
+    setShadow(!shadow);
+    shadow
+      ? document.body.classList.remove(style.body__scroll)
+      : document.body.classList.add(style.body__scroll);
+  };
 
   return (
     <div className={style.app}>
-      <ChoiceTicker shadow={() => setShadow(!shadow)} />
+      <ChoiceTicker shadow={() => ChooseTickerIsPnen()} />
       <div className={shadow ? style.shadow_on : style.shadow_off}></div>
       <div className={style.content}>
         <div className={style.container__name_ticker__cup}>
