@@ -69,6 +69,10 @@
   }
 }
 @media (max-width: 768px) {
+	.wrapper{
+		position: fixed;
+		z-index: 5;
+	}
 	.container {
     width: 250px;
   }

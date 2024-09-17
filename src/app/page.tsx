@@ -33,7 +33,7 @@ function App() {
   return (
     <div className={style.app}>
       <ChoiceTicker shadow={() => setShadow(!shadow)} />
-      <div className={shadow ? style.shadow_on : style.shadow_off}></div>
+      <div className={shadow ? style.shadow_on : style.shadow_off}></div> 
       <div className={style.content}>
         <div className={style.container__name_ticker__cup}>
           <h1 className={style.name_ticker}>
