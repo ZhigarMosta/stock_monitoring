@@ -10,9 +10,8 @@
   align-items: center;
   flex-wrap: wrap;
 
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow-y: auto;
-	// df
 }
 
 .content::-webkit-scrollbar {
@@ -56,7 +55,7 @@
     background: rgba(0, 0, 0, 0);
     z-index: 2;
     animation: on 0.2s forwards;
-		display: block;
+    display: block;
   }
   @keyframes on {
     0% {
