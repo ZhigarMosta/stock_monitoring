@@ -10,7 +10,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  height: calc(100vh - 50px); 
+  height: calc(var(--vh, 1vh) * 100);
   overflow-y: auto;
 }
 
