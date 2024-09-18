@@ -3,7 +3,7 @@
 }
 .container {
   border-radius: 25px;
-  max-width: 750px;
+  min-width: 750px; //TODO width: 750px
   min-height: 822px;
 
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
@@ -41,14 +41,15 @@
 @media (max-width: 1100px) {
   .container {
     flex-direction: column;
+    min-width: 0%; //TODO width
   }
   .left_block {
     margin: 0 auto;
     width: 100%;
   }
-	.arrow__top {
-		max-width: 100%;
-	}
+  .arrow__top {
+    max-width: 100%;
+  }
   .arrow {
     width: 100%;
     height: 4px;
