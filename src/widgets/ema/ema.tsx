@@ -16,7 +16,7 @@ const Ema = () => {
   const periodData = useUnit($periodEma);
   const arr = periodData[0].period;
 
-  const visibleConsiderations = false;
+  const visibleConsiderations = true;
   return (
     <div className={style.element_for_img}>
       <div className={style.img__container}>
@@ -32,8 +32,8 @@ const Ema = () => {
         <div className={style.wrapper__top_part}>
           <div className={style.wrapper__name_block}>
             <p className={style.name_block}>
-              <samp className={style.EMA50}>EMA50</samp> и{" "}
-              <samp className={style.EMA200}>EMA200</samp>
+              <samp className={style.ema50}>EMA50</samp> и{" "}
+              <samp className={style.ema200}>EMA200</samp>
             </p>
             <div className={style.arrow}></div>
           </div>

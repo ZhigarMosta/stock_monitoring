@@ -1,12 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700,400);
+@font-face {
+  font-family: "Amiko";
+  src: url("./../../app/fonts/Amiko-Regular.ttf") format("ttf");
+}
 .element_for_img {
-  margin: 0 25px;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 720px;
 }
 .container {
   border-radius: 25px;
-  width: 100%;
-  max-width: 720px;
-  height: 280px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
   background: #1e202b;
   padding: 20px;
@@ -33,11 +35,13 @@
   font-weight: 400;
   font-size: 30px;
   color: #c2c5d4;
-  .EMA50 {
+  .ema50 {
     color: #46c5e5;
+		font-family: "Amiko", sans-serif;
   }
-  .EMA200 {
+  .ema200 {
     color: #6b77be;
+		font-family: "Amiko", sans-serif;
   }
 }
 .wrapper__ChoosePerud {
@@ -65,7 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-		padding: 10px;
+    padding: 10px;
   }
   .name_block {
     font-size: 18px;

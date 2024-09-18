@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+@font-face {
+  font-family: "Amiko";
+  src: url("./../../app/fonts/Amiko-Regular.ttf") format("ttf");
+}
 .box {
   position: relative;
   z-index: 1;
@@ -6,7 +9,7 @@
 .wrapper {
   border-radius: 10px;
   // max-width: 298px;
-	width: 100%;
+  width: 100%;
   height: 40px;
 
   padding-top: 7px;
@@ -53,7 +56,7 @@
   border-radius: 10px;
   height: 0;
   // max-width: 0px;
-	width: 100%;
+  width: 100%;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
   background: #000;
 
@@ -73,7 +76,7 @@
 
 .modal:hover {
   // max-width: 298px;
-	width: 100%;
+  width: 100%;
   .container__modal_text label {
     display: block;
   }
@@ -94,9 +97,7 @@
 .wrapper__instrument {
   display: block;
   width: 100%;
-  padding-top: 7px;
-  padding-bottom: 6px;
-  padding-left: 40px;
+	padding: 7px 40px 6px 40px;
   background-color: #16171f;
 }
 .wrapper__instrument:hover {

@@ -6,7 +6,7 @@ export const nameTickerData = createEvent();
 // Хранилище для данных
 export const $nameTicker: any = createStore([
   {
-    name_ticker: [{ name: "Ticker" }],
+    name_ticker: [{ name: "TICKER" }],
   },
 ]).on(nameTickerData, (_, newData) => newData);
 

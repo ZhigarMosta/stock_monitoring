@@ -27,7 +27,6 @@ const Ticker: React.FC<MenuTextProps> = ({
         onChange={fun}
         checked={checked}
       />
-      <div className={style.container}>
         <label className={style.content} htmlFor={"ticket__id" + id}>
           <p className={style.text}>{name}</p>
           <div className={style.wrapper__warnings}>
@@ -53,7 +52,6 @@ const Ticker: React.FC<MenuTextProps> = ({
             ))}
           </div>
         </label>
-      </div>
     </div>
   );
 };

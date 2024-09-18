@@ -1,5 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
-
+@font-face {
+  font-family: "Amiko";
+  src: url("./../../app/fonts/Amiko-Bold.ttf") format("ttf");
+}
 .containe {
   width: 100%;
   display: flex;
@@ -37,7 +39,9 @@
   text-align: right;
   color: #c2c5d4;
 }
-
+.currency{
+	font-size: 20px;
+}
 .container__text_name__listlist {
   display: flex;
   justify-content: space-around;
@@ -60,7 +64,7 @@
 .buy_sell__list {
   display: flex;
   justify-content: space-around;
-  max-height: 107px;
+  max-height: 161px;
   overflow-y: auto;
 }
 .buy__list,

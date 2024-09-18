@@ -32,7 +32,7 @@ const News = () => {
         <div className={style.wrapper__top_part}>
           <div className={style.wrapper__name_block}>
             <p className={style.name_block}>Новости</p>
-						<div className={style.arrow}></div>
+            <div className={style.arrow}></div>
           </div>
           <div className={style.wrapper__ChoosePerud}>
             <ChoosePerud

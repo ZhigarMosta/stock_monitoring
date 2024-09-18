@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+@font-face {
+  font-family: "Amiko";
+  src: url("./../../app/fonts/Amiko-Regular.ttf") format("ttf");
+}
 
 .container {
   width: 400px;
@@ -9,7 +12,7 @@
   margin-bottom: 13px;
 }
 .name_legend {
-	width: 100%;
+  width: 100%;
   max-width: 400px;
   display: flex;
   justify-content: space-between;
@@ -83,8 +86,8 @@
 .container__input {
   display: flex;
   justify-content: space-around;
-	flex-wrap: wrap;
-	gap: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 10px;
   margin-right: 10px;
 }
@@ -105,7 +108,7 @@
   .container {
     width: 240px;
   }
-	.container__chart {
-		max-height: 320px;
-	}
+  .container__chart {
+    max-height: 320px;
+  }
 }

@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+@font-face {
+  font-family: "Amiko";
+  src: url("./../../app/fonts/Amiko-Regular.ttf") format("ttf");
+}
 
 .wrapper {
   position: fixed;
@@ -170,10 +173,10 @@
   .button {
     font-size: 15px;
   }
-	.close {
+  .close {
     margin: -45px 0 0 215px;
   }
-	.container__modal_text {
-		gap: 10px;
-	}
+  .container__modal_text {
+    gap: 10px;
+  }
 }

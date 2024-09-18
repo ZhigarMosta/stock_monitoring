@@ -1,15 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+@font-face {
+  font-family: "Amiko";
+  src: url("./../app/fonts/Amiko-Bold.ttf") format("ttf");
+}
 .body__scroll {
   overflow: hidden;
 }
 .app {
   display: flex;
 }
-
 .content {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+	justify-content: center;
+	// padding-left: 30px;
   align-items: center;
   flex-wrap: wrap;
 
@@ -39,15 +42,16 @@
   font-weight: 700;
   font-size: 64px;
   color: #c2c5d4;
-  margin-left: 25px;
 }
 .container__news_volumes_ema {
-  margin-top: 17px;
-  margin-left: 18px;
   display: flex;
   flex-direction: column;
+	gap: 40px;
 }
 @media (max-width: 768px) {
+	.content {
+    height: 100%;
+  }
   .shadow_on {
     position: fixed;
     width: 100vw;
@@ -97,9 +101,13 @@
     margin-left: 0;
     align-items: center;
   }
-}
-@media (max-width: 768px) {
-  .content {
-    height: 100%;
+	.container__name_ticker__cup{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.content {
+    display: block;
   }
 }

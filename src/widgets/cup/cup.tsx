@@ -21,9 +21,7 @@ const Cup = () => {
       <div className={style.container}>
         <div className={style.left_block}>
           <CupPrise />
-          <div className={style.line_container}>
-            <div className={style.arrow__top}></div>
-          </div>
+          <div className={style.arrow__top}></div>
           <Lvl />
         </div>
         <div className={style.arrow}></div>

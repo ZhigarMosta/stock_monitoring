@@ -1,8 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Amiko:regular,600,700);
+@font-face {
+  font-family: "Amiko";
+  src: url("./../../app/fonts/Amiko-Regular.ttf") format("ttf");
+}
 
 .wrapper {
   border-radius: 10px;
-	width: 100%;
+  width: 100%;
   max-width: 260px;
   height: 40px;
   padding: 7px 10px 7px 9px;
