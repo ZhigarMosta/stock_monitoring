@@ -63,37 +63,32 @@
   font-size: 12px;
   color: #abafc4;
 }
-.input__date::-webkit-calendar-picker-indicator {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  background-image: url("../../image/calendar.svg");
-}
-.input__date {
-  appearance: none; /* Убираем стандартное отображение инпута */
-  -webkit-appearance: none; /* Для Safari и iOS */
-  background-color: transparent; /* Прозрачный фон */
-  border: none; /* Убираем границы */
-  font-family: "Amiko", sans-serif;
-  font-size: 12px;
-  color: #abafc4;
-  width: 100%;
+// .input__date::-webkit-calendar-picker-indicator {
+//   width: 30px;
+//   height: 30px;
+//   cursor: pointer;
+//   background-image: url("../../image/calendar.svg");
+// }
+// .input__date {
+//   appearance: none; /* Убираем стандартное отображение инпута */
+//   -webkit-appearance: none; /* Для Safari и iOS */
+//   background-color: transparent; /* Прозрачный фон */
+//   border: none; /* Убираем границы */
+//   font-family: "Amiko", sans-serif;
+//   font-size: 12px;
+//   color: #abafc4;
+//   width: 100%;
+//   position: relative;
+// }
+// .input__date-wrapper {
+//   position: relative;
+//   width: 100%;
+// }
+
+.input__date_wrapper {
   position: relative;
-}
-.input__date-wrapper {
-  position: relative;
-  width: 100%;
-}
-.container__input {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-.wrapper__input {
-  display: flex;
+
+	display: flex;
   align-items: center;
   gap: 10px;
   padding: 5px 10px 5px 18px;
@@ -105,6 +100,52 @@
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   background: #1b1d28;
 }
+
+.input__date {
+  appearance: none; /* Убираем стандартный стиль инпута */
+  -webkit-appearance: none; /* Для Safari и iOS */
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Amiko", sans-serif;
+  font-size: 12px;
+  color: #abafc4;
+  width: 100%;
+}
+
+.input__date_wrapper::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url("../../image/calendar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none; /* Не блокирует взаимодействие с инпутом */
+}
+
+.container__input {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+// .wrapper__input {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   padding: 5px 10px 5px 18px;
+
+//   border-radius: 10px;
+//   width: 160px;
+//   height: 40px;
+
+//   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+//   background: #1b1d28;
+// }
 @media (max-width: 1100px) {
   .container {
     width: 100%;
@@ -124,7 +165,7 @@
     align-items: flex-start;
     gap: 15px;
   }
-  .wrapper__input {
+  .input__date_wrapper {
     width: 100%;
   }
   .input__date {

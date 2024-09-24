@@ -30,30 +30,30 @@ const ByeSellChart = () => {
         <BuyChart />
         <SellChart />
       </div>
-      <div className={style.container__input}>
-        <div className={style.wrapper__input}>
-          <p className={style.input__text}>От</p>
-          <input
-            className={style.input__date}
-            name="ofDateFrom"
-            value={ofDateFrom}
-            onChange={handleOfDateFromChange}
-            required
-            type="date"
-          />
-        </div>
-        <div className={style.wrapper__input}>
-          <p className={style.input__text}>До</p>
-          <input
-            className={style.input__date}
-            name="ToDateFrom"
-            value={ToDateFrom}
-            onChange={handleToDateFromChange}
-            required
-            type="date"
-          />
-        </div>
+			<div className={style.container__input}>
+      <div className={style.input__date_wrapper}>
+        <p className={style.input__text}>От</p>
+        <input
+          className={style.input__date}
+          type="date"
+          name="ofDateFrom"
+          value={ofDateFrom}
+          onChange={handleOfDateFromChange}
+          required
+        />
       </div>
+      <div className={style.input__date_wrapper}>
+        <p className={style.input__text}>До</p>
+        <input
+          className={style.input__date}
+          type="date"
+          name="ToDateFrom"
+          value={ToDateFrom}
+          onChange={handleToDateFromChange}
+          required
+        />
+      </div>
+    </div>
     </div>
   );
 };
