@@ -2,21 +2,9 @@ import React, { useState } from "react";
 import style from "./byeSellChart.module.scss";
 import SellChart from "../../shared/chart/sellChart";
 import BuyChart from "../../shared/chart/byeChart";
+import InputDate from "@/shared/inputDate/inputDate";
 
 const ByeSellChart = () => {
-  const [ofDateFrom, setOfDateFrom] = useState("");
-
-  const handleOfDateFromChange = (e: any) => {
-    console.log(e.target.value);
-    setOfDateFrom(e.target.value);
-  };
-
-  const [ToDateFrom, setToDateFrom] = useState("");
-
-  const handleToDateFromChange = (e: any) => {
-    console.log(e.target.value);
-    setToDateFrom(e.target.value);
-  };
   return (
     <div className={style.container}>
       <div className={style.cntainer__legend}>
@@ -30,30 +18,7 @@ const ByeSellChart = () => {
         <BuyChart />
         <SellChart />
       </div>
-			<div className={style.container__input}>
-      <div className={style.input__date_wrapper}>
-        <p className={style.input__text}>От</p>
-        <input
-          className={style.input__date}
-          type="date"
-          name="ofDateFrom"
-          value={ofDateFrom}
-          onChange={handleOfDateFromChange}
-          required
-        />
-      </div>
-      <div className={style.input__date_wrapper}>
-        <p className={style.input__text}>До</p>
-        <input
-          className={style.input__date}
-          type="date"
-          name="ToDateFrom"
-          value={ToDateFrom}
-          onChange={handleToDateFromChange}
-          required
-        />
-      </div>
-    </div>
+      <InputDate />
     </div>
   );
 };

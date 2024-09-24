@@ -1,0 +1,134 @@
+.input__text {
+  max-width: 120px;
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #abafc4;
+}
+
+.input__date_wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px 5px 18px;
+
+  border-radius: 10px;
+  width: 160px;
+  height: 40px;
+
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  background: #1b1d28;
+}
+
+.input__date {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Amiko", sans-serif;
+  font-size: 12px;
+  color: #abafc4;
+  width: 100%;
+}
+
+.input__date_wrapper::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url("../../image/calendar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.container__input {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.input__date::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+  background: none;
+  cursor: pointer;
+}
+
+/* Кастомизация календаря */
+.custom__calendar {
+  background-color: #fff; /* Белый фон для стандартного вида */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Стандартный тёмный цвет текста */
+  font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.custom__calendar .react-datepicker__day-names {
+  display: none;
+}
+/* Заголовок календаря (месяц) */
+.custom__calendar .react-datepicker__header {
+  background-color: #f0f0f0; /* Светло-серый фон для хедера */
+  border-bottom: 1px solid #ddd;
+  display: flex;
+	display: none;
+}
+
+/* Текущий месяц */
+.custom__calendar .react-datepicker__current-month {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Дни недели (верхняя строка) */
+.custom__calendar .react-datepicker__day-name {
+  color: #666;
+  font-weight: bold;
+	width: 100px
+}
+
+/* Дни месяца */
+.custom__calendar .react-datepicker__day {
+  color: #333;
+}
+
+/* Выбранный день */
+.custom__calendar .react-datepicker__day--selected {
+  background-color: #4e80ee; /* Синий фон выбранного дня */
+  color: #fff;
+}
+
+/* Наведение на день */
+.custom__calendar .react-datepicker__day:hover {
+  background-color: #e0e0e0; /* Светло-серый фон при наведении */
+}
+
+/* Текущий день */
+.custom__calendar .react-datepicker__day--today {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 480px) {
+  .container__input {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .input__date_wrapper {
+    width: 100%;
+  }
+  .input__date {
+    font-size: 14px;
+  }
+}
