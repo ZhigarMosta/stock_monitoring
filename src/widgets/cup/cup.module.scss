@@ -1,10 +1,10 @@
 .element_for_img {
   margin: 0 20px 0 0;
+  min-width: 750px; //TODO width: 750px
+  min-height: 822px;
 }
 .container {
   border-radius: 25px;
-  min-width: 750px; //TODO width: 750px
-  min-height: 822px;
 
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
   background: #1e202b;
@@ -38,10 +38,21 @@
   margin-bottom: -20px;
   margin-left: -20px;
 }
+@media (max-width: 1820px) {
+  .element_for_img {
+    margin: 0 0 0 0;
+  }
+}
 @media (max-width: 1100px) {
+  .element_for_img {
+    margin: 0 0 0 0;
+    min-width: 0;
+    width: 100%;
+    padding: 0 20px;
+  }
   .container {
     flex-direction: column;
-    min-width: 0%; //TODO width
+    // min-width: 0%; //TODO width
   }
   .left_block {
     margin: 0 auto;

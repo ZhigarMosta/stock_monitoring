@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import style from "./volumes.module.scss";
+import style from "./chart.module.scss";
 import ChoosePerud from "../../shared/choosePerud/choosePerud";
+import EmaChart from "../../shared/chart/emaChart";
 import considerations from "../../image/considerations.svg";
-import VolumesChart from "../../shared/chart/volumesChart";
 import { useUnit } from "effector-react";
-import { $periodValumes } from "../../store/choicePeriod";
+import { $periodEma } from "../../store/choicePeriod";
 import Image from "next/image";
 
-const Volumes = () => {
+const Ema = () => {
   const [selectedValue, setSelectedValue] = useState("День");
   const handleChange = (event: any) => {
     setSelectedValue(event.target.value);
   };
 
-  const periodData = useUnit($periodValumes);
+  const periodData = useUnit($periodEma);
   const arr = periodData[0].period;
 
-  const visibleConsiderations = false;
+  const visibleConsiderations = true;
   return (
     <div className={style.element_for_img}>
       <div className={style.img__container}>
@@ -31,7 +31,10 @@ const Volumes = () => {
       <div className={style.container}>
         <div className={style.wrapper__top_part}>
           <div className={style.wrapper__name_block}>
-            <p className={style.name_block}>Объёмы</p>
+            <p className={style.name_block}>
+              <samp className={style.ema50}>EMA50</samp> и{" "}
+              <samp className={style.ema200}>EMA200</samp>
+            </p>
             <div className={style.arrow}></div>
           </div>
           <div className={style.wrapper__ChoosePerud}>
@@ -39,14 +42,14 @@ const Volumes = () => {
               arr={arr}
               value={selectedValue}
               func={handleChange}
-              name={"volumes"}
+              name={"ema"}
             />
           </div>
         </div>
-        <VolumesChart />
+        <EmaChart />
       </div>
     </div>
   );
 };
 
-export default Volumes;
+export default Ema;

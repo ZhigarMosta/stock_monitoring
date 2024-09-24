@@ -6,13 +6,16 @@
   margin-left: 20px;
   width: 100%;
   max-width: 720px;
-  height: 280px;
+  height: 272px;
 }
 .container {
   border-radius: 25px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
   background: #1e202b;
   padding: 20px;
+
+  width: 720px;
+  height: 272px;
 }
 .img__container {
   width: 40px;
@@ -36,6 +39,14 @@
   font-weight: 400;
   font-size: 30px;
   color: #c2c5d4;
+	.ema50 {
+    color: #46c5e5;
+    font-family: "Amiko", sans-serif;
+  }
+  .ema200 {
+    color: #6b77be;
+    font-family: "Amiko", sans-serif;
+  }
 }
 .wrapper__ChoosePerud {
   width: 100%;
@@ -49,9 +60,20 @@
 @media (max-width: 1820px) {
   .element_for_img {
     margin: 0;
-  }
-  .element_for_img {
     padding: 0 20px;
+    max-width: 750px;
+  }
+}
+@media (max-width: 1100px) {
+  .element_for_img {
+    width: 100%;
+    max-width: 720px;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    // max-width: 720px;
+    height: 100%;
   }
 }
 @media (max-width: 1035px) {
@@ -68,7 +90,7 @@
   }
 }
 @media (max-width: 550px) {
-	.wrapper__name_block,
+  .wrapper__name_block,
   .wrapper__ChoosePerud {
     width: 100%;
   }

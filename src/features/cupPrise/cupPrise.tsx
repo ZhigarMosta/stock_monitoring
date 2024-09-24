@@ -20,7 +20,10 @@ const CupPrise = () => {
       </div>
       <div className={style.prise_ticker__block}>
         <p className={style.text}>Цена</p>
-        <div className={style.ticker}>{priseTicker}<span className={style.currency}>₽</span></div>
+        <div className={style.ticker}>
+          {priseTicker}
+          <span className={style.currency}>₽</span>
+        </div>
       </div>
       <div className={style.text_block}>
         <p className={style.text}>Крупные заявки за сегодня</p>

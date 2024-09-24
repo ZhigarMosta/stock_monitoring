@@ -39,8 +39,8 @@
   text-align: right;
   color: #c2c5d4;
 }
-.currency{
-	font-size: 20px;
+.currency {
+  font-size: 20px;
 }
 .container__text_name__listlist {
   display: flex;
@@ -101,7 +101,28 @@
   .containe {
     max-width: 100%;
   }
+  .name_block,.ticker {
+    font-size: 30px;
+  }
+  .text,
+  .text_name__buy_listlist,
+  .text_name__sell_listlist {
+    font-size: 26px;
+  }
   .text__list {
-    font-size: 15px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .name_block,.ticker {
+    font-size: 20px;
+  }
+  .text,
+  .text_name__buy_listlist,
+  .text_name__sell_listlist {
+    font-size: 18px;
+  }
+  .text__list {
+    font-size: 12px;
   }
 }

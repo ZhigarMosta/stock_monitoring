@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import ChoiceTicker from "../features/choiceTicker/choiceTicker";
 import style from "./app.module.scss";
-import Ema from "../widgets/ema/ema";
-import Volumes from "../widgets/volumes/volumes";
-import News from "../widgets/news/news";
+import Ema from "../widgets/rightChart/ema";
+import Volumes from "../widgets/rightChart/volumes";
+import News from "../widgets/rightChart/news";
 import Cup from "../widgets/cup/cup";
 import { useUnit } from "effector-react";
 import { $nameTicker } from "../store/tickerStore";

@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import style from "./ema.module.scss";
+import style from "./chart.module.scss";
 import ChoosePerud from "../../shared/choosePerud/choosePerud";
-import EmaChart from "../../shared/chart/emaChart";
 import considerations from "../../image/considerations.svg";
+import NewsChart from "../../shared/chart/newsChart";
 import { useUnit } from "effector-react";
-import { $periodEma } from "../../store/choicePeriod";
+import { $periodNews } from "../../store/choicePeriod";
 import Image from "next/image";
 
-const Ema = () => {
+const News = () => {
   const [selectedValue, setSelectedValue] = useState("День");
   const handleChange = (event: any) => {
     setSelectedValue(event.target.value);
   };
 
-  const periodData = useUnit($periodEma);
+  const periodData = useUnit($periodNews);
   const arr = periodData[0].period;
 
   const visibleConsiderations = true;
@@ -31,10 +31,7 @@ const Ema = () => {
       <div className={style.container}>
         <div className={style.wrapper__top_part}>
           <div className={style.wrapper__name_block}>
-            <p className={style.name_block}>
-              <samp className={style.ema50}>EMA50</samp> и{" "}
-              <samp className={style.ema200}>EMA200</samp>
-            </p>
+            <p className={style.name_block}>Новости</p>
             <div className={style.arrow}></div>
           </div>
           <div className={style.wrapper__ChoosePerud}>
@@ -42,14 +39,14 @@ const Ema = () => {
               arr={arr}
               value={selectedValue}
               func={handleChange}
-              name={"ema"}
+              name={"new"}
             />
           </div>
         </div>
-        <EmaChart />
+        <NewsChart />
       </div>
     </div>
   );
 };
 
-export default Ema;
+export default News;
