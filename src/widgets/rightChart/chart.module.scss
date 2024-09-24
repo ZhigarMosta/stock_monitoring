@@ -39,7 +39,7 @@
   font-weight: 400;
   font-size: 30px;
   color: #c2c5d4;
-	.ema50 {
+  .ema50 {
     color: #46c5e5;
     font-family: "Amiko", sans-serif;
   }
@@ -62,17 +62,16 @@
     margin: 0;
     padding: 0 20px;
     max-width: 750px;
+    height: 100%;
   }
 }
 @media (max-width: 1100px) {
   .element_for_img {
     width: 100%;
     max-width: 720px;
-    height: 100%;
   }
   .container {
     width: 100%;
-    // max-width: 720px;
     height: 100%;
   }
 }

@@ -7,7 +7,6 @@
   width: 400px;
 }
 .cntainer__legend {
-  // display: flex;
   justify-content: center;
   margin-bottom: 13px;
 }
@@ -44,7 +43,6 @@
   max-height: 640px;
   overflow-y: auto;
 }
-
 .container__chart::-webkit-scrollbar {
   width: 10px;
 }
@@ -58,7 +56,6 @@
   border: 1px solid #6b77be;
   border-radius: 15px;
 }
-
 .input__text {
   max-width: 120px;
   font-family: "Amiko", sans-serif;
@@ -73,15 +70,19 @@
   background-image: url("../../image/calendar.svg");
 }
 .input__date {
-  max-width: 120px;
+  appearance: none; /* Убираем стандартное отображение инпута */
+  -webkit-appearance: none; /* Для Safari и iOS */
+  background-color: transparent; /* Прозрачный фон */
+  border: none; /* Убираем границы */
   font-family: "Amiko", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   color: #abafc4;
-}
-.input__date {
+  width: 100%;
   position: relative;
-  padding-right: 0px; /* Убедитесь, что есть место для изображения */
+}
+.input__date-wrapper {
+  position: relative;
+  width: 100%;
 }
 .container__input {
   display: flex;
@@ -115,5 +116,18 @@
 @media (max-width: 500px) {
   .container__chart {
     max-height: 320px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container__input {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .wrapper__input {
+    width: 100%;
+  }
+  .input__date {
+    font-size: 14px;
   }
 }
